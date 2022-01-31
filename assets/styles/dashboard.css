@@ -56,17 +56,19 @@ li{
 }
 .menu ul{
     margin: 20px;
+    margin-left: 0;
 }
 .menu > ul> li{
-    padding: 5px 0px;
     margin: 5px 0px;
     transition: all .6s;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
 }
 .menu> ul> li >i{
-    padding: 5px;
+    padding: 5px 15px 5px 20px;
     font-size: 1.25rem;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
     
 }
 .menu > ul> li:hover{
@@ -74,8 +76,11 @@ li{
     
 }
 .menu ul li:hover > i {
-   color: red;
+   color: #007ACC;
+   background-color: #161618;
 }
 .main__body{
     width: auto;
 }
+
+/*Inner Body*/
