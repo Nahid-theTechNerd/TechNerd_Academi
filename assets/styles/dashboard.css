@@ -81,6 +81,7 @@ li{
 }
 .main__body{
     width: auto;
+    overflow-y: scroll;
 }
 
 /*Inner Body*/
@@ -99,8 +100,10 @@ section > h3{
 .card{
     display: flex;
     height: 130px;
-
-
+    transition: ease-in-out 0.4s;
+}
+.card:hover{
+    background-color: #007ACC;
 }
 .card img{
     width: 40%;
@@ -110,14 +113,28 @@ section > h3{
 }
 .card .details{
     padding: 0rem 1rem;
-    
-
 }
 .card .details h3{
-
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
+}
+.best__seller .container{
+    grid-template-columns: repeat(4,1fr);
+}
+.best__seller .container .card{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+}
+.best__seller .container .card img{
+    height: 50%;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+}
+.best__seller .container .card h3{
+    height: 40%;
 }
